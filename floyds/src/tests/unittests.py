@@ -16,6 +16,7 @@ from iterative.iterative_floyd import iterative_floyd
 import recursion.recursive_floyd as recursive_module
 import iterative.iterative_floyd as iterative_module
 
+
 class TestFloydWarshall(unittest.TestCase):
     """
     Unit tests for the Floyd-Warshall Algorithm (Recursive & Iterative).
@@ -24,7 +25,7 @@ class TestFloydWarshall(unittest.TestCase):
     def setUp(self):
         """ Reset the global GRAPH variables before each test. """
         self.initial_graph = [
-            [0,   7, float('inf'), 8],
+            [0, 7, float('inf'), 8],
             [float('inf'), 0, 5, float('inf')],
             [float('inf'), float('inf'), 0, 2],
             [float('inf'), float('inf'), float('inf'), 0]
@@ -59,6 +60,7 @@ class TestFloydWarshall(unittest.TestCase):
         ]
 
         self.assertEqual(iterative_module.GRAPH, expected_result, "Iterative Floyd-Warshall failed!")
+
 
 if __name__ == "__main__":
     unittest.main()

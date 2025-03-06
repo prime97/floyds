@@ -16,7 +16,7 @@ This repository implements the Floyd-Warshall Algorithm using both recursive and
 
 ## 🚀 Running the Scripts
 
-1️⃣ Run the Floyd-Warshall Implementations
+1️⃣ Run the Floyd-Warshall Implementations from a python IDE. (Both performance_test & unittest needs to be run from terminal.)
 
 * Recursive Version
 
@@ -53,27 +53,6 @@ floyd-warshall-python/
 │   ├── performance_test.py  # Performance benchmarking between recursive and iterative approach
 │── requirements.txt  # Dependencies (if any)
 │── README.md  # Project documentation
-
-## 📖 Explanation of Floyd-Warshall Algorithm
-
-The Floyd-Warshall Algorithm is used to find the shortest paths between all pairs of nodes in a weighted graph. It works by iteratively updating distances using the formula:
-
-distance[i][j] = min(distance[i][j], distance[i][k] + distance[k][j])
-
-Where:
-
-i is the starting node,
-
-j is the ending node,
-
-k is an intermediate node.
-
-## Recursive vs Iterative Approach
-
-| Approach  | Pros                         | Cons                        |
-|-----------|------------------------------|-----------------------------|
-| Recursive | Elegant, uses function calls | Slower, higher memory usage |
-| Iterative | More efficient, faster       | Uses explicit loops         |
 
 
 ## 📦 Requirements
